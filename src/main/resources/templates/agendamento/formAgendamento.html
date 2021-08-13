@@ -4,12 +4,30 @@
 
 <head>
 <title>AgendamentossApp</title>
+<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body><h1>Cadastro de Agendamentos</h1>
-<form method="post">
+		      
+<form class="container" method="post">
 Local: <input type="text" value="" name="local"/>
-Data inicial: <input type="text" value="" name="datainicio"/>
-Data final: <input type="text" value="" name="datafim"/>
-<button type="submit">Salvar</button>
-</form></body>
+<div class="row">
+	<div class="input-field col s6">
+		Data inicial: <input type="text" value="" name="datainicio"/>
+	</div>
+	<div class="input-field col s6">
+		Data final: <input type="text" value="" name="datafim"/>
+	</div>
+</div>
+<button type="submit" class="waves-effect waves-light btn">Salvar</button>
+<a href="/agendamento" class="waves-effect waves-light btn">Voltar</a>
+</form>
+<!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
 </html>
