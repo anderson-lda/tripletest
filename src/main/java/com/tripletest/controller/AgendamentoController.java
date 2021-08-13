@@ -1,5 +1,7 @@
 package com.tripletest.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,34 +14,6 @@ import com.tripletest.repository.AgendamentoRepository;
 
 @Controller
 public class AgendamentoController {
-
-//	@Autowired
-//	private AgendamentoService agendamentoService;
-//	
-//	@RequestMapping(value="info2",method=RequestMethod.GET)
-//	public String info() {
-//		return "info...";
-//	}
-//	
-//	@RequestMapping(value="createagendamento", method=RequestMethod.POST)
-//	public String createAgendamento(@RequestBody Agendamento agendamento) {
-//		return agendamentoService.createAgendamento(agendamento);
-//	}
-//	
-//	@RequestMapping(value="readagendamentos",method=RequestMethod.GET)
-//	public List<Agendamento> readAgendamentos(){
-//		return agendamentoService.readAgendamentos();
-//	}
-//	
-//	@RequestMapping(value = "updateagendamento",method=RequestMethod.PUT)
-//	public String updateAgendamento(@RequestBody Agendamento agendamento) {
-//		return agendamentoService.updateAgendamento(agendamento);
-//	}
-//	
-//	@RequestMapping(value="deleteagendamento",method=RequestMethod.DELETE)
-//	public String deleteAgendamento(@RequestBody Agendamento agendamento) {
-//		return agendamentoService.deleteAgendamento(agendamento);
-//	}
 	
 	@Autowired
 	private AgendamentoRepository ar;
