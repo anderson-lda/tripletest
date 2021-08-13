@@ -1,7 +1,6 @@
 package com.tripletest.repository;
 
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
 
 import com.tripletest.entity.Agendamento;
 
@@ -10,11 +9,6 @@ import com.tripletest.entity.Agendamento;
 
 public interface AgendamentoRepository extends CrudRepository<Agendamento, String> {
 
-//	public boolean existsByDatainicio(String datainicio);
-//	
-//	public List<Agendamento> findByDatainicio(String datainicio);
-//	
-//	@Query("select max(g.id) from Agendamento g")
-//	public Integer findMaxId();
+		Agendamento findById(Integer id);
 	
 }
